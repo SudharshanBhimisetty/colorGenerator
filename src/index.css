@@ -35,19 +35,16 @@ code {
     monospace;
 }
 
-input.error {
-  border: 2px solid red;
-}
-
 .color-light {
   color: white;
 }
+
 label {
   font-weight: bold;
 }
 
 .colors {
-  margin-top: 50px;
+  margin-top: 70px;
   min-height: calc(100vh - 100px);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
@@ -62,5 +59,33 @@ label {
 
 .each-color {
   padding-left: 10px;
+  cursor: pointer;
+}
+
+.converter {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  border: 4px solid rgb(80, 74, 74, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 900px) {
+  .converter {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+}
+
+.converter-box {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: honeydew;
+  border: ridge;
   cursor: pointer;
 }
